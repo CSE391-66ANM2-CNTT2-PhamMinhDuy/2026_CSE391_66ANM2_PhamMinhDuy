@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5 - Danh sách nhân viên</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f2f2f2; 
+            margin: 0; padding: 20px; }
+        .nav { 
+            background: #333; 
+            color: white; 
+            padding: 10px; display: flex; 
+            justify-content: space-between; 
+            align-items: center; }
+        .container { 
+            background: white; 
+            padding: 20px; 
+            margin-top: 20px; 
+            border-radius: 8px; }
+        .header-row { 
+            display: flex; 
+            justify-content: 
+            space-between; 
+            align-items: center; }
+        table {
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 15px; }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 10px; 
+            text-align: left; }
+        th { 
+            background-color: #f8f9fa; }
+        .btn-add { 
+            background: #007bff; 
+            color: white; 
+            padding: 8px 15px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; }
+        .btn-edit { 
+            background: #ffc107; 
+            border: none; padding: 5px; 
+            border-radius: 3px; }
+        .btn-delete { 
+            background: #dc3545; 
+            color: white; 
+            border: none; 
+            padding: 5px; 
+            border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div>
+            <strong>HR Management</strong> 
+            Home Contact
+        </div>
+        <div>
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header-row">
+            <h2>Employee</h2>
+            <button class="btn-add">+ Add</button>
+        </div>
+        <table>
+            <tr>
+                <th>ID</th> 
+                <th>Name</th> 
+                <th>Email</th> 
+                <th>Phone</th> 
+                <th>Position</th> 
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>1</td> 
+                <td>Fatima Beatriz</td> 
+                <td>Fatima@gmail.com</td> 
+                <td>0985674321</td> 
+                <td>Staff</td>
+                <td>
+                    <button class="btn-edit">Edit</button>
+                    <button class="btn-delete">Delete</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
