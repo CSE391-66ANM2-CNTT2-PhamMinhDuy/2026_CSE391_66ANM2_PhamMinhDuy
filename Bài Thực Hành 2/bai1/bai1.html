@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Form</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: Arial, Helvetica, sans-serif;
+        background:#dcdcdc;
+    }
+
+    .wrapper{
+        width:900px;
+        margin:40px auto;
+        background:#e6e6e6;
+        padding:30px;
+    }
+
+    h2{
+        margin-bottom:25px;
+        font-weight:600;
+        color:#333;
+    }
+
+    form{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .row{
+        display:flex;
+        gap:20px;
+    }
+
+    input, textarea{
+        padding:12px;
+        border:1px solid #bbb;
+        border-radius:3px;
+        font-size:14px;
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    textarea{
+        height:180px;
+        resize:none;
+    }
+
+    .full{
+        width:100%;
+    }
+
+    .bottom{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    button{
+        background:linear-gradient(#6bb6df,#4da3d4);
+        border:1px solid #3f8ec2;
+        color:white;
+        padding:10px 20px;
+        border-radius:4px;
+        cursor:pointer;
+    }
+
+    button:hover{
+        opacity:0.9;
+    }
+
+    .note{
+        font-size:14px;
+        color:#555;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+    <h2>Get in touch with us by filling contact form below</h2>
+
+    <form>
+
+        <div class="row">
+            <input type="text" placeholder="* Enter your full name">
+            <input type="email" placeholder="* Enter your email address">
+        </div>
+
+        <input type="text" class="full" placeholder="Enter your subject">
+
+        <textarea placeholder="* Your message here..."></textarea>
+
+        <div class="bottom">
+            <button type="submit">Send message</button>
+            <div class="note">
+                * Please fill all required form field, thanks!
+            </div>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
