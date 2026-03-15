@@ -1,0 +1,14 @@
+table, th, td{
+border:1px solid black;
+border-collapse:collapse;
+padding:6px;
+}
+
+.low{
+background:yellow;
+}
+
+body{
+font-family:Arial;
+margin:40px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Đăng ký tài khoản</title>
+<style>
+.error{
+    color:red;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Form Đăng Ký</h2>
+
+<form id="formDangKy">
+
+<label>Họ và tên</label><br>
+<input type="text" id="fullname">
+<div id="fullnameError" class="error"></div><br>
+
+<label>Email</label><br>
+<input type="text" id="email">
+<div id="emailError" class="error"></div><br>
+
+<label>Số điện thoại</label><br>
+<input type="text" id="phone">
+<div id="phoneError" class="error"></div><br>
+
+<label>Mật khẩu</label><br>
+<input type="password" id="password">
+<div id="passwordError" class="error"></div><br>
+
+<label>Xác nhận mật khẩu</label><br>
+<input type="password" id="confirm">
+<div id="confirmError" class="error"></div><br>
+
+<label>Giới tính</label><br>
+<input type="radio" name="gender" value="Nam"> Nam
+<input type="radio" name="gender" value="Nữ"> Nữ
+<div id="genderError" class="error"></div><br>
+
+<input type="checkbox" id="terms"> Tôi đồng ý điều khoản
+<div id="termsError" class="error"></div><br>
+
+<button type="submit">Đăng ký</button>
+
+</form>
+
+<div id="success"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
